@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Yield</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style/first.css')}}">
+</head>
+<body>
+    <form action="/form" method="post">
+        <label for="Crop_Year">Crop_Year:</label>
+        <input type="number" id="Crop_Year" name="Crop_Year" required max="2024"><br><br>
+
+        <label for="Temperature">Temperature:</label>
+        <input type="number" id="Temperature" name="Temperature" required><br><br>
+
+        <label for="Humidity">Humidity:</label>
+        <input type="number" id="Humidity" name="Humidity" required><br><br>
+
+        <label for="Soil_Moisture">Soil Moisture:</label>
+        <input type="number" id="Soil_Moisture" name="Soil_Moisture" required><br><br>
+
+        <label for="Area">Area:</label>
+        <input type="number" id="Area" name="Area" required><br><br>
+
+        <label for="Crop">Crop:</label>
+        <select name="Crop" id="Crop">
+            <option value="1">Arecanut - 1</option>
+            <option value="2">Bajra - 2</option>
+            <option value="3">Banana - 3</option>
+            <option value="4">Bhindi - 4</option>
+            <option value="5">Black pepper - 5</option>
+            <option value="6">Brinjal - 6</option>
+            <option value="7">Cabbage - 7</option>
+            <option value="8">Cashewnut - 8</option>
+            <option value="9">Castor seed - 9</option>
+            <option value="10">Citrus Fruit - 10</option>
+            <option value="11">Coconut - 11</option>
+            <option value="12">Coriander - 12</option>
+            <option value="13">Cotton - 13</option>
+            <option value="14">Cowpea - 14</option>
+            <option value="15">Dry chillies - 15</option>
+            <option value="16">Dry ginger - 16</option>
+            <option value="17">Garlic - 17</option>
+            <option value="18">Ginger - 18</option>
+            <option value="19">Gram - 19</option>
+            <option value="20">Grapes - 20</option>
+            <option value="21">Groundnut - 21</option>
+            <option value="22">Horsegram - 22</option>
+            <option value="23">Jowar - 23</option>
+            <option value="24">Jute - 24</option>
+            <option value="25">Khesari - 25</option>
+            <option value="26">Korra - 26</option>
+            <option value="27">Lemon - 27</option>
+            <option value="28">Linseed - 28</option>
+            <option value="29">Maize - 29</option>
+            <option value="30">Mango - 30</option>
+            <option value="31">Masoor - 31</option>
+            <option value="32">Mesta - 32</option>
+            <option value="33">Moong - 33</option>
+            <option value="34">Niger seed - 34</option>
+            <option value="35">Onion - 35</option>
+            <option value="36">Orange - 36</option>
+            <option value="37">Paddy - 37</option>
+            <option value="38">Papaya - 38</option>
+            <option value="39">Peas beans - 39</option>
+            <option value="40">Pineapple - 40</option>
+            <option value="41">Pome Fruit - 41</option>
+            <option value="42">Pome Granet - 42</option>
+            <option value="43">Potato - 43</option>
+            <option value="44">Urad - 44</option>
+            <option value="45">Varagu - 45</option>
+            <option value="46">Wheat - 46</option>
+            <option value="47">Turmeric - 47</option>
+            <option value="48">Tapioca - 48</option>
+            <option value="49">Tobacco - 49</option>
+            <option value="50">Sugarcane - 50</option>
+            <option value="51">Soyabean - 51</option>
+            <option value="52">Sunflower - 52</option>
+            <option value="53">Small millets - 53</option>
+            <option value="54">Sweet potato - 54</option>
+            <option value="55">Sapota - 55</option>
+            <option value="56">Sesamum - 56</option>
+            <option value="57">Sannhamp - 57</option>
+            <option value="58">Safflower - 58</option>
+            <option value="59">Samai - 59</option>
+            <option value="60">Rice - 60</option>
+            <option value="61">Ragi - 61</option>
+            <option value="62">Rapeseed Mustard - 62</option>
+            <option value="63">Pulses total - 63</option>
+            <option value="64">Guar seed - 64</option>
+        </select>
+        <br><br>
+        <input type="submit" id="submit" name="submit" value="Predict Your Crop">
+    </form>
+</body>
+</html>
